@@ -223,6 +223,9 @@
   \useinnertheme{rounded}
   \useinnertheme{rectangles}
 
+  %% Set the transparency for uncovered items
+  \setbeamercovered{transparent}
+
   % Define custom colors
   \definecolor{slide-charcoal}{HTML}{272727}
   \definecolor{slide-ivory}{HTML}{FAFAF1}
@@ -328,7 +331,7 @@
   % Insert logo at the end of the frametitle
   \addtobeamertemplate{frametitle}{}{
     \vspace*{-4.2ex}
-    \hfill\insertlogo
+    \hfill\raisebox{0pt}[4.2ex][0pt]{\insertlogo}
   }
 
   \newif\ifframenumber
